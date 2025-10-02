@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="p-4">
+    <h2>Form Buku Tamu</h2>
+   
+    <form class="form">
+        <div class="mb-3">
+            <label class="form-label">Nama Lengkap:</label>
+            <input type="text" name="nama_lengkap" class="form-control" placeholder="Masukkan nama lengkap">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Jenis Kelamin:</label><br>
+            <input type="radio" name="jenis_kelamin" value="L" checked> Laki-laki
+            <input type="radio" name="jenis_kelamin" value="P"> Perempuan
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Alamat Tinggal:</label>
+            <input type="text" name="alamat" class="form-control" placeholder="Masukkan alamat">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email:</label>
+            <input type="email" name="email" class="form-control" placeholder="Masukkan email">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Aktif pada sosial media:</label><br>
+            <input type="checkbox" name="facebook" value="Ya" checked> Facebook
+            <input type="checkbox" name="twitter" value="Ya"> Twitter
+            <input type="checkbox" name="instagram" value="Ya"> Instagram
+            <input type="checkbox" name="path" value="Ya"> Path
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Mengetahui web ini dari:</label>
+            <select name="info" class="form-select">
+                <option selected>-= Pilih =-</option>
+                <option value="web">Web</option>
+                <option value="surat kabar">Surat Kabar</option>
+                <option value="teman kerabat">Teman/Kerabat</option>
+                <option value="browsing internet">Browsing Internet</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Pesan:</label>
+            <textarea name="pesan" class="form-control" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Kirim</button>
+    </form>
+</body>
+</html>
